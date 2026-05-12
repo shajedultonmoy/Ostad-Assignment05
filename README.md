@@ -347,7 +347,35 @@ tonmo@GHOST MINGW64 /d/DEVOPS WORKS/Moonlight Coffee (development)
 $
 **************************************************************************************************************************************
 
+What is CI/CD?
 
+CI/CD automates software build, test, and deployment processes.
+
+CI (Continuous Integration)
+
+Automatically builds/tests code after push.
+
+CD (Continuous Delivery/Deployment)
+
+Automatically deploys application after successful build.
+
+Benefits:
+
+Faster development
+Reduced manual work
+Early bug detection
+Better software quality
+
+What is Self-Hosted Runner?
+
+A self-hosted runner is your own machine/server that executes GitHub Actions workflows.
+
+In your assignment:
+
+AWS EC2 Ubuntu server acts as self-hosted runner
+GitHub sends jobs to this server
+
+***************************************************************************************************************************************
 
 
 # React + Vite
