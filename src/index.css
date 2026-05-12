@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-midnight: #0F172A;
+  --color-coffee: #6F4E37;
+  --color-cream: #F5E6D3;
+  --color-gold: #D4A373;
+  --color-warm: #FAF7F2;
+
+  --font-sans: "Inter", "sans-serif";
+  --font-serif: "Playfair Display", "serif";
+}
+
+:root {
+  font-family: var(--font-sans);
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: #FAF7F2;
+  background-color: #0F172A;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@utility glass {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+@utility btn-primary {
+  @apply px-8 py-3 bg-gold text-midnight font-bold rounded-full transition-all duration-300 hover:bg-cream hover:scale-105 active:scale-95;
+}
+
+@utility btn-outline {
+  @apply px-8 py-3 border-2 border-gold text-gold font-bold rounded-full transition-all duration-300 hover:bg-gold hover:text-midnight hover:scale-105 active:scale-95;
+}
+
+@utility section-padding {
+  @apply py-20 px-4 md:px-8 lg:px-16;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #6F4E37;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #D4A373;
+}
